@@ -37,5 +37,39 @@ namespace UnitTests
             // Assert
             rate.Should().Be(0.4);
         }
+        
+        [Fact]
+        public void TestMonodSubstrateCompetitiveInhibition()
+        {
+            // Arrange
+            var substrateConcentration = 0.5;
+            var maxGrowthRate = 1;
+            var affinityConstant = 0.5;
+            var substrateInhibitionConstant = 1;
+
+            // Act
+            var rate = MonodModels.MonodSubstrateCompetitiveInhibition(substrateConcentration, maxGrowthRate, affinityConstant,
+                substrateInhibitionConstant);
+
+            // Assert
+            rate.Should().BeApproximately(0.3333333333333333, 1e-8);
+        }
+        [Fact]
+        public void TestMonodSubstrateNonompetitiveInhibition()
+        {
+            // Arrange
+            var substrateConcentration = 0.5;
+            var maxGrowthRate = 1;
+            var affinityConstant = 0.5;
+            var substrateInhibitionConstant = 1;
+
+            // Act
+            var rate = MonodModels.MonodSubstrateCompetitiveInhibition(substrateConcentration, maxGrowthRate, affinityConstant,
+                substrateInhibitionConstant);
+
+            // Assert
+            rate.Should().BeApproximately(0.3333333333333333, 1e-8);
+        }
+        
     }
 }
