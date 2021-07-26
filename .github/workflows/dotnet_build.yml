@@ -1,4 +1,6 @@
-﻿on:
+﻿name: DotNet Build
+
+on:
   push:
     branches:
       - main
