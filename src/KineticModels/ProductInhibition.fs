@@ -1,4 +1,4 @@
-﻿namespace Fermentation.Simulator.InhibitionModels
+﻿namespace Fermentation.Kinetic.Models
 
 open System
 open System.Runtime.InteropServices

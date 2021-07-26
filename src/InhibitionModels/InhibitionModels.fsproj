@@ -7,9 +7,4 @@
         <RootNamespace>Fermentation.Simulator.InhibitionModels</RootNamespace>
     </PropertyGroup>
 
-    <ItemGroup>
-        <Compile Include="CompetitiveInhibition.fs" />
-        <Compile Include="ProductInhibition.fs" />
-    </ItemGroup>
-
 </Project>

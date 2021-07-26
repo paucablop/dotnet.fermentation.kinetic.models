@@ -1,4 +1,4 @@
-﻿namespace Fermentation.Simulator.InhibitionModels
+﻿namespace Fermentation.Kinetic.Models
 
 module CompetitiveInhibition =
     let InhibitionFator (inhibitorConcentration: float, inhibitionConstant: float) =

@@ -21,7 +21,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\InhibitionModels\InhibitionModels.fsproj" />
     <ProjectReference Include="..\..\src\KineticModels\KineticModels.fsproj" />
   </ItemGroup>
 

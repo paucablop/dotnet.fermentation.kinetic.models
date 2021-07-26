@@ -1,4 +1,4 @@
-using Fermentation.Simulator.KineticModels;
+using Fermentation.Kinetic.Models;
 using FluentAssertions;
 using Xunit;
 

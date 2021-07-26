@@ -1,4 +1,4 @@
-﻿namespace Fermentation.Simulator.KineticModels
+﻿namespace Fermentation.Kinetic.Models
 
 module MonodModels =
     let SimpleMonod (substrateConcentration: float, maxGrowthRate: float, affinityConstant: float) =

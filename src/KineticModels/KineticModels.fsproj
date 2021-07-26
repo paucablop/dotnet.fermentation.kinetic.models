@@ -3,12 +3,14 @@
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <AssemblyName>Fermentation.Simulator.KineticModels</AssemblyName>
-    <RootNamespace>Fermentation.Simulator.KineticModels</RootNamespace>
+    <AssemblyName>Fermentation.Kinetic.Models</AssemblyName>
+    <RootNamespace>Fermentation.Kinetic.Models</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
     <Compile Include="MonodModels.fs" />
+    <Compile Include="CompetitiveInhibition.fs" />
+    <Compile Include="ProductInhibition.fs" />
   </ItemGroup>
 
 </Project>
