@@ -9,9 +9,9 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <Compile Include="MonodModels.fs"/>
-        <Compile Include="CompetitiveInhibition.fs"/>
-        <Compile Include="ProductInhibition.fs"/>
+        <Compile Include="MonodModels.fs" />
+        <Compile Include="InhibitorInhibition.fs" />
+        <Compile Include="ProductInhibition.fs" />
     </ItemGroup>
 
     <!-- Workaround for https://github.com/GitTools/GitVersion/issues/1031 -->
