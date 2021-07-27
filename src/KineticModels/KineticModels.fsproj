@@ -5,9 +5,10 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <AssemblyName>Fermentation.Kinetic.Models</AssemblyName>
     <RootNamespace>Fermentation.Kinetic.Models</RootNamespace>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
-  <ItemGroup>
+   <ItemGroup>
     <Compile Include="MonodModels.fs" />
     <Compile Include="CompetitiveInhibition.fs" />
     <Compile Include="ProductInhibition.fs" />
