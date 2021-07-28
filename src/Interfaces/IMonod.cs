@@ -5,13 +5,13 @@ namespace Fermentation.Kinetic.Interfaces
     [PublicAPI]
     public interface ISimpleMonod
     {
-        float MaxGrowthRate { get; init; }
-        float AffinityConstant { get; init; }
+        double MaxGrowthRate { get; init; }
+        double AffinityConstant { get; init; }
     }
     
     [PublicAPI]
     public interface IMonodInhibition : ISimpleMonod
     {
-        float InhibitionConstant { get; init; }
+        double InhibitionConstant { get; init; }
     }
 }

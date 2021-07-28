@@ -5,7 +5,7 @@ namespace Fermentation.Kinetic.Interfaces
     [PublicAPI]
     public interface ILinearProductInhibition
     {
-        float InhibitionConstant { get; init; }
+        double InhibitionConstant { get; init; }
     }
 
     [PublicAPI]
@@ -16,6 +16,6 @@ namespace Fermentation.Kinetic.Interfaces
     [PublicAPI]
     public interface ISuddenProductInhibition : ILinearProductInhibition
     {
-        float InhibitionExponent { get; init; }
+        double InhibitionExponent { get; init; }
     }
 }

@@ -5,6 +5,6 @@ namespace Fermentation.Kinetic.Interfaces
     [PublicAPI]
     public interface IInhibitorInhibition
     {
-        float InhibitionConstant { get; init; }
+        double InhibitionConstant { get; init; }
     }
 }
