@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <AssemblyName>Fermentation.Kinetic.Interfaces</AssemblyName>
+        <RootNamespace>Fermentation.Kinetic.Interfaces</RootNamespace>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    </PropertyGroup>
+
+    <!-- Workaround for https://github.com/GitTools/GitVersion/issues/1031 -->
+    <PropertyGroup Condition=" '$(GitVersion_FullSemVer)' != ''">
+        <GetVersion>false</GetVersion>
+        <WriteVersionInfoToBuildLog>false</WriteVersionInfoToBuildLog>
+        <UpdateAssemblyInfo>false</UpdateAssemblyInfo>
+
+        <Version>$(GitVersion_FullSemVer)</Version>
+        <VersionPrefix>$(GitVersion_MajorMinorPatch)</VersionPrefix>
+        <VersionSuffix>$(GitVersion_PreReleaseTag)</VersionSuffix>
+        <PackageVersion>$(GitVersion_FullSemVer)</PackageVersion>
+        <InformationalVersion Condition=" '$(InformationalVersion)' == '' ">$(GitVersion_InformationalVersion)</InformationalVersion>
+        <AssemblyVersion Condition=" '$(AssemblyVersion)' == '' ">$(GitVersion_AssemblySemVer)</AssemblyVersion>
+        <FileVersion Condition=" '$(FileVersion)' == '' ">$(GitVersion_AssemblySemFileVer)</FileVersion>
+        <RepositoryBranch Condition=" '$(RepositoryBranch)' == '' ">$(GitVersion_BranchName)</RepositoryBranch>
+        <RepositoryCommit Condition=" '$(RepositoryCommit)' == '' ">$(GitVersion_Sha)</RepositoryCommit>
+    </PropertyGroup>
+    <ItemGroup>
+      <PackageReference Include="JetBrains.Annotations" Version="2021.2.0" />
+    </ItemGroup>
+
+</Project>
