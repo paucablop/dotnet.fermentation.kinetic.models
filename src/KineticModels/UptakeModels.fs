@@ -7,7 +7,7 @@ type UptakeModels() =
         maxUptakeRate * substrateConcentration
         / (affinityConstant + substrateConcentration)
 
-    static member Monod(substrateConcentration: float, monodConstants: ISimpleMonod) =
+    static member Monod(substrateConcentration: float, monodConstants: IMonod) =
         UptakeModels.Monod(
             substrateConcentration,
             float (monodConstants.MaxUptakeRate),
