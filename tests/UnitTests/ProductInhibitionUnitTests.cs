@@ -40,27 +40,13 @@ namespace UnitTests
             // Arrange
             var productConcentration = 0.5;
             var inhibitionConstant = 1.0;
+            var exponentialConstant = 1.0;
 
             // Act
-            var rate = ProductInhibition.SuddenInhibition(productConcentration, inhibitionConstant);
+            var rate = ProductInhibition.SuddenInhibition(productConcentration, inhibitionConstant, exponentialConstant);
 
             // Assert
             rate.Should().BeApproximately(0.5, 1e-8);
-        }
-
-        [Fact]
-        public void TestSuddenInhibitionWithNonDefaultInhibitionExponent()
-        {
-            // Arrange
-            var productConcentration = 0.5;
-            var inhibitionConstant = 1.0;
-            var inhibitionExponent = 2.0;
-
-            // Act
-            var rate = ProductInhibition.SuddenInhibition(productConcentration, inhibitionConstant, inhibitionExponent);
-
-            // Assert
-            rate.Should().BeApproximately(0.75, 1e-8);
         }
     }
 }

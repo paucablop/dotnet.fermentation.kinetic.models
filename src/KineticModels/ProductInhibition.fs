@@ -28,15 +28,15 @@ type ProductInhibition =
         (
             productConcentration: float,
             inhibitionConstant: float,
-            inhibitionExponent: float
+            exponentialConstant: float
         ) =
         1.0
         - (productConcentration / inhibitionConstant)
-          ** inhibitionExponent
+          ** exponentialConstant
 
     static member SuddenInhibition(productConcentration: float, productInhibitionConstants: ISuddenProductInhibition) =
         ProductInhibition.SuddenInhibition(
             productConcentration,
             productInhibitionConstants.InhibitionConstant,
-            productInhibitionConstants.InhibitionExponent
+            productInhibitionConstants.ExponentialConstant
         )
