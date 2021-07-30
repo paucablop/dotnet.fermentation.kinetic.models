@@ -28,7 +28,7 @@ type ProductInhibition =
         (
             productConcentration: float,
             inhibitionConstant: float,
-            [<Optional; DefaultParameterValue(1)>] inhibitionExponent: float
+            inhibitionExponent: float
         ) =
         1.0
         - (productConcentration / inhibitionConstant)
