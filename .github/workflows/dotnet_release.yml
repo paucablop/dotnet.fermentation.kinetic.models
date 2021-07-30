@@ -31,7 +31,7 @@ jobs:
           dotnet restore
           dotnet build --no-restore
           dotnet build --configuration Release --no-restore
-          dotnet pack --configuration Release --no-restore --no-build
+          dotnet pack --configuration Release --no-restore 
       - name: DotNet Test
         shell: pwsh
         run: |
