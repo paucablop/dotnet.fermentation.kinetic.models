@@ -14,6 +14,10 @@
         <Compile Include="ProductInhibition.fs" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\Interfaces\Interfaces.csproj" />
+    </ItemGroup>
+
     <!-- Workaround for https://github.com/GitTools/GitVersion/issues/1031 -->
     <PropertyGroup Condition=" '$(GitVersion_FullSemVer)' != ''">
         <GetVersion>false</GetVersion>

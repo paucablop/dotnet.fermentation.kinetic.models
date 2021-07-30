@@ -14,7 +14,7 @@ namespace UnitTests
             var inhibitionConstant = 1.0;
 
             // Act
-            var rate = CompetitiveInhibition.InhibitionFator(inhibitorConcentration, inhibitionConstant);
+            var rate = InhibitorInhibition.InhibitionFator(inhibitorConcentration, inhibitionConstant);
 
             // Assert
             rate.Should().BeApproximately(0.6666666666666666, 1e-8);
