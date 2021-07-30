@@ -9,9 +9,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <Compile Include="MonodModels.fs" />
-        <Compile Include="InhibitorInhibition.fs" />
-        <Compile Include="ProductInhibition.fs" />
+        <Compile Include="UptakeModels.fs" />
+        <Compile Include="Inhibition.fs" />
     </ItemGroup>
 
     <ItemGroup>

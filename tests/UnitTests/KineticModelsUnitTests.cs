@@ -15,7 +15,7 @@ namespace UnitTests
             var affinityConstant = 0.5;
 
             // Act
-            var rate = MonodModels.SimpleMonod(substrateConcentration, maxGrowthRate, affinityConstant);
+            var rate = UptakeModels.Monod(substrateConcentration, maxGrowthRate, affinityConstant);
 
             // Assert
             rate.Should().Be(0.5);
@@ -31,7 +31,7 @@ namespace UnitTests
             var substrateInhibitionConstant = 1;
 
             // Act
-            var rate = MonodModels.MonodSubstrateInhibition(substrateConcentration, maxGrowthRate, affinityConstant,
+            var rate = UptakeModels.MonodSubstrateInhibition(substrateConcentration, maxGrowthRate, affinityConstant,
                 substrateInhibitionConstant);
 
             // Assert
@@ -48,7 +48,7 @@ namespace UnitTests
             var substrateInhibitionConstant = 1;
 
             // Act
-            var rate = MonodModels.MonodSubstrateCompetitiveInhibition(substrateConcentration, maxGrowthRate, affinityConstant,
+            var rate = UptakeModels.MonodSubstrateCompetitiveInhibition(substrateConcentration, maxGrowthRate, affinityConstant,
                 substrateInhibitionConstant);
 
             // Assert
@@ -64,7 +64,7 @@ namespace UnitTests
             var substrateInhibitionConstant = 1;
 
             // Act
-            var rate = MonodModels.MonodSubstrateCompetitiveInhibition(substrateConcentration, maxGrowthRate, affinityConstant,
+            var rate = UptakeModels.MonodSubstrateCompetitiveInhibition(substrateConcentration, maxGrowthRate, affinityConstant,
                 substrateInhibitionConstant);
 
             // Assert

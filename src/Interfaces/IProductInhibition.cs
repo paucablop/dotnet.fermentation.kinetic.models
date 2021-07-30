@@ -3,18 +3,28 @@
 namespace Fermentation.Kinetic.Interfaces
 {
     [PublicAPI]
-    public interface ILinearProductInhibition
+    public interface IInhibition
     {
         double InhibitionConstant { get; init; }
     }
-
+    
     [PublicAPI]
-    public interface IExponentialProductInhibition : ILinearProductInhibition
+    public interface ILinearInhibition : IInhibition
     {
     }
 
     [PublicAPI]
-    public interface ISuddenProductInhibition : ILinearProductInhibition
+    public interface IExponentialInhibition : IInhibition
+    {
+    }
+    
+    [PublicAPI]
+    public interface IInverseInhibition : IInhibition
+    {
+    }
+    
+    [PublicAPI]
+    public interface ISuddenInhibition : IInhibition
     {
         double ExponentialConstant { get; init; }
     }
