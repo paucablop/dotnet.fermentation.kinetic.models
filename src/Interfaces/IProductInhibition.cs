@@ -5,7 +5,7 @@ namespace Fermentation.Kinetic.Interfaces
     [PublicAPI]
     public interface IInhibition
     {
-        double InhibitionConstant { get; init; }
+        double InhibitionConstant { get; set; }
     }
     
     [PublicAPI]
@@ -26,6 +26,6 @@ namespace Fermentation.Kinetic.Interfaces
     [PublicAPI]
     public interface ISuddenInhibition : IInhibition
     {
-        double ExponentialConstant { get; init; }
+        double ExponentialConstant { get; set; }
     }
 }

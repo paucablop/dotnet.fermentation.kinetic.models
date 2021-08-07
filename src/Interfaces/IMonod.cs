@@ -5,13 +5,13 @@ namespace Fermentation.Kinetic.Interfaces
     [PublicAPI]
     public interface IMonod
     {
-        double MaxUptakeRate { get; init; }
-        double AffinityConstant { get; init; }
+        double MaxUptakeRate { get; set; }
+        double AffinityConstant { get; set; }
     }
     
     [PublicAPI]
     public interface IMonodInhibition : IMonod
     {
-        double InhibitionConstant { get; init; }
+        double InhibitionConstant { get; set; }
     }
 }
