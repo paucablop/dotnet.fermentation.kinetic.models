@@ -24,7 +24,7 @@ type UptakeModels() =
         maxUptakeRate * substrateConcentration
         / (affinityConstant
            + substrateConcentration
-           + substrateConcentration ** 2.0 / inhibitionConstant)
+           + (substrateConcentration * substrateConcentration) / inhibitionConstant)
 
     static member MonodSubstrateInhibition
         (
