@@ -25,17 +25,17 @@ namespace UnitTests
         public void TestMonodSubstrateInhibition()
         {
             // Arrange
-            var substrateConcentration = 0.5;
-            var maxGrowthRate = 1;
+            var substrateConcentration = 1.0;
+            var maxGrowthRate = 0.5;
             var affinityConstant = 0.5;
-            var substrateInhibitionConstant = 1;
+            var substrateInhibitionConstant = 1.0;
 
             // Act
             var rate = UptakeModels.MonodSubstrateInhibition(substrateConcentration, maxGrowthRate, affinityConstant,
                 substrateInhibitionConstant);
 
             // Assert
-            rate.Should().Be(0.4);
+            rate.Should().Be(0.2);
         }
         
         [Fact]

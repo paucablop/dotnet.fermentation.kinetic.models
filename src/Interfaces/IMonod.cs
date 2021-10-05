@@ -7,6 +7,7 @@ namespace Fermentation.Kinetic.Interfaces
     {
         double MaxUptakeRate { get; set; }
         double AffinityConstant { get; set; }
+        public double Calculate();
     }
     
     [PublicAPI]
