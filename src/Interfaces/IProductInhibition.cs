@@ -6,7 +6,7 @@ namespace Fermentation.Kinetic.Interfaces
     public interface IInhibition
     {
         double InhibitionConstant { get; set; }
-        public double Calculate();
+        public double Calculate(double inhibitorConcentration);
 
     }
     
